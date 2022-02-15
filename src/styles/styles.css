@@ -198,6 +198,10 @@ nav {
   }
 }
 
+#videoPlayer {
+  max-width: 75rem;
+}
+
 .button-container {
   margin-top: 2rem;
   text-size-adjust: 100%;
@@ -219,7 +223,6 @@ button {
   text-size-adjust: 100%;
   border: 0px;
   font-family: Zen, Arial, sans-serif;
-  text-align: center;
 }
 
 button:hover {
