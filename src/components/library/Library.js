@@ -5,7 +5,9 @@ import Books from './Books';
 const Library = () => {
   return (
     <>
-      <div class="book" id="library"></div>
+      <div class="book" id="library">
+        <Books />
+      </div>
     </>
   );
 };
