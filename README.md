@@ -10,8 +10,6 @@ Open [link](https://earth-hominid.github.io/iread/) to view the demo in your bro
 
 This project was originally a one page application written in Vanilla JavaScript, HTML, and CSS. The project has been refactored using React, and Firebase has been added to store the library.
 
-The CSS is built from the ground up and dynamically adjusts for most screen sizes.
-
 This project is part of **The Odin Project Full Stack [Course](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/library)**
 
 ### Technology
