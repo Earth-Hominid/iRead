@@ -3,12 +3,14 @@ import Video from '../../assets/video/1.mp4';
 
 const Header = () => {
   return (
-    <header>
+    <>
       <div className="hero">
         <div className="hero-info">
           <h1 id="hero-title">iRead</h1>
           <div className="hero-text">
-            <p>A virtual space to access & store your digital books.</p>
+            <p className="hero__subtitle">
+              A virtual space to access & store your digital books.
+            </p>
           </div>
         </div>
         <div className="styles_container">
@@ -20,7 +22,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </header>
+    </>
   );
 };
 

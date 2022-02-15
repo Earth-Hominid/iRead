@@ -1,11 +1,4 @@
 import { initializeApp } from 'firebase/app';
-import {
-  getAuth,
-  onAuthStateChanged,
-  GoogleAuthProvider,
-  signInWithPopup,
-  signOut,
-} from 'firebase/auth';
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
@@ -18,4 +11,17 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 
-export const auth = getAuth(app);
+export function getFirebaseConfig() {
+  if (!firebaseConfig || !firebaseConfig.apiKey) {
+    throw new Error(
+      'No Firebase configuration object provided.' +
+        '\n' +
+        "Add your web app's configuration object to firebase-config.js"
+    );
+  } else {
+    return firebaseConfig;
+  }
+}
+
+const firebaseAppConfig = getFirebaseConfig();
+initializeApp(firebaseAppConfig);
